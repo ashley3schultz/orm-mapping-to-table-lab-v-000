@@ -32,6 +32,7 @@ class Student
   end
 
   def self.create(attr)
-    self.new(attr[:name], attr[:grade]).save
+    student = self.new(attr[:name], attr[:grade]).save
+    student
   end
 end
