@@ -33,6 +33,6 @@ class Student
 
   def self.create(attr)
     student = self.new(attr[:name], attr[:grade])
-    studen.save
+    student.save
   end
 end
