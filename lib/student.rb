@@ -32,6 +32,6 @@ class Student
   end
 
   def self.create(attr)
-    attr.send (:k=, v)
+    self.new(attr[name], attr[grade]).save
   end
 end
