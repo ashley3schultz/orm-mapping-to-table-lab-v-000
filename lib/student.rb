@@ -5,8 +5,8 @@ class Student
 
   def initialize(name, grade)
     @name = name
-    @grade = grade 
-  end 
+    @grade = grade
+  end
 
   # DB[:conn]
 
