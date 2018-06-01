@@ -32,7 +32,6 @@ class Student
   end
 
   def self.create(attr)
-    binding.pry
     self.new(attr[:name], attr[:grade]).save
   end
 end
