@@ -32,6 +32,6 @@ class Student
   end
 
   def self.create(attr)
-    binding.pry
+    attr.send(:k, v)
   end
 end
