@@ -32,7 +32,6 @@ class Student
   end
 
   def self.create(attr)
-    student = self.new(attr[:name], attr[:grade])
-    student.save
+    student = self.new(attr[:name], attr[:grade]).tap {|s| s.save}
   end
 end
